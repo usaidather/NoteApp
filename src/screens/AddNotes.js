@@ -8,7 +8,7 @@ function AddNotes({ navigation }) {
     const [noteDescription, setNoteDescription] = useState('')
 
     function onSaveNote() {
-        navigation.state.params.addNotes({ noteTitle, noteDescription })
+        navigation.state.params.addNote({ noteTitle, noteDescription })
         navigation.goBack()
     }
 
